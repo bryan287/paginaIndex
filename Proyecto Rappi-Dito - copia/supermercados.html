@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devise-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="entregaicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="estilossuper.css">
+    <title>Supermercados</title>
+</head>
+
+<body style="background-color:#fcf3ec;">
+    <style type="text/css" media="screen">
+        A:link {
+            text-decoration: none
+        }
+        /* A:hover {
+            color: #d6aa88;
+            font-family: arial;
+            text-decoration: none
+        } */
+        
+        A:visited {
+            color: #d6aa88;
+            font-family: arial;
+            text-decoration: none
+        }
+        
+        * {
+            outline: none !important;
+        }
+        
+        *:focus {
+            outline: none !important;
+        }
+        
+        textarea:focus,
+        input:focus {
+            outline: none !important;
+        }
+        
+        a {
+            text-decoration: none !important;
+            outline: none !important;
+        }
+    </style>
+    <div id="contenedor_carga">
+        <div id="carga"></div>
+    </div>
+    <!-- TERMINA LOGO CARGA -->
+
+    <!-- INICIO TITULO -->
+    <h1 class='insetshadow'>¿Buscas magia?</h1>
+    <h1 class='elegantshadow'>
+        <div class="bitmojidiv">
+            <img src="VideoSnapchat.gif" width="80px" height="200px" class="bitmoji"><a href="index.html" style="color: black"> Rappi-dito</a>
+        </div>
+    </h1>
+
+    <div class="separador"></div>
+
+    <div class="margen1">
+        <a href="#modal1" class="registro">
+            <button class="button">
+            ¡Ingresa!
+    <div class="button__horizontal"></div>
+    <div class="button__vertical"></div>
+    </button>
+        </a>
+    </div>
+
+
+    <aside id="modal1" class="modal1">
+        <div class="content-modal1">
+            <header>
+                <a href="#" class="close-modal1" style="color: black;">X</a>
+                <h2>Ingresa.</h2>
+            </header>
+            <article class="arti1">
+                <span class="titulo">Rappi-dito</span>
+                <div class="separador1"></div>
+                <input type="text" placeholder="Usuario" class="primerinput">
+                <input type="password" placeholder="Contraseña" class="segundoinput">
+                <div class="centrado">
+                    <input type="checkbox" class="tercerinput"><span class="tercer">Recordarme</span>
+                </div>
+
+                <button class="butonentrar"><span class="entrar">¡Rappi-dito!</span></button>
+                <span class="olvidaste"><a href="" style="color: black;">¿Olvidaste tu contraseña?</a></span>
+                <span class="registrarme"><a href="" style="color: black;"><u>Registrarme</u></a></span>
+            </article>
+        </div>
+        <a href="#" class="btn-close-modal1"></a>
+    </aside>
+    <!-- Revisar que todo compile correctamente -->
+
+
+    <div class="margen">
+        <a href="#modal" class="cta">
+            <button class="button1">
+            ¿Pedido especial?
+    <div class="button__horizontal1"></div>
+    <div class="button__vertical1"></div>
+    </button>
+        </a>
+    </div>
+
+    <aside id="modal" class="modal">
+        <div class="content-modal">
+            <header>
+                <a href="#" class="close-modal" style="color: black;">X</a>
+                <h2>Pedido especial.</h2>
+            </header>
+            <article class="arti">
+                <span class="titulo">Rappi-dito</span>
+                <div class="separador1"></div>
+                <span class="peticion">¿Qué te gustaría ordenar?</span>
+                <input type="text" placeholder="Ingrese su pedido" class="pedido">
+                <!-- <select name="direccion" id="" class="select">
+                    <option value="1">Tula de Allende</option>
+                    <option value="1">Tepeji del río</option>
+                    <option value="1">Pachuca de Soto</option>
+                    <option value="1">Progreso de Obregón</option>
+                    <option value="1">Tula de Allende</option>
+                </select> -->
+                <span class="ubicacion">Seleccione su municipio</span>
+                <div class="select-box">
+                    <div class="select-box__current" tabindex="1">
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked" />
+                            <p class="select-box__input-text">Tula de Allende</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="1" value="2" name="Ben" />
+                            <p class="select-box__input-text">Tepeji del río</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="2" value="3" name="Ben" />
+                            <p class="select-box__input-text">Progreso de Obregon</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="3" value="4" name="Ben" />
+                            <p class="select-box__input-text">Pachuca de Soto</p>
+                        </div>
+                        <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true" />
+                    </div>
+                    <ul class="select-box__list">
+                        <li>
+                            <label class="select-box__option" for="0" aria-hidden="aria-hidden">Tula de Allende</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="1" aria-hidden="aria-hidden">Tepeji del río</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="2" aria-hidden="aria-hidden">Progreso de Obregon</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="3" aria-hidden="aria-hidden">Pachuca de Soto</label>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+        </div>
+        <a href="#" class="btn-close-modal"></a>
+    </aside>
+    <!-- FINAL TITULO -->
+
+
+
+
+    <p class="rappidito">Rappi-dito</p>
+    <p class="restaurante">Súper Mercado</p>
+
+    <div class="principal">
+        <div class="adentro">
+            <div class="letras">
+                Tus compras, tu estilo.
+            </div>
+            <div class="primerimg">
+                <img src="primerimagen.jpg" alt="">
+                <span class="primertexto">¿Necesitas algunos pocos productos rápido?</span>
+                <span class="primersubtexto">Nuestros Rappi-ditos comprarán y entregarán tus productos rappi-dito</span>
+            </div>
+            <div class="segundaimg">
+                <img src="segundaimagen.jpg" alt="">
+                <span class="segundotexto">Todo al alcance de tu dedo.</span>
+                <span class="segundosubtexto">Realiza tus compras a la hora que tu deseés, sin límite de tiempo.</span>
+            </div>
+            <div class="terceraimg">
+                <img src="ofertas.jpg" alt="">
+                <span class="tercertexto">Ofertas, Ofertas y más ofertas</span>
+                <span class="tercersubtitexto">¿Búscas los mejores precios?, ¿Cansado de pagar precios altos?</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="mejoresmarcas">
+        <span class="marcas">¡Las mejores marcas a corto alcance!</span>
+        <div class="campoimagenes">
+            <img src="cocacola.webp" width="125px" height="45px" class="im1">
+            <img src="redbull.webp" width="125px" height="45px" class="im8">
+            <img src="bimbo.webp" width="70px" height="50px" class="im2">
+            <img src="stella-artois.webp" width="70px" height="50px" class="im3">
+            <img src="nestle.webp" width="70px" height="50px" class="im4">
+            <img src="lays.webp" width="70px" height="50px" class="im5">
+            <img src="huggies.webp" width="70px" height="50px" class="im6">
+            <img src="head-and-shoulders.webp" width="105px" height="45px" class="im7">
+            <img src="gilette.webp" width="125px" height="45px" class="im9">
+        </div>
+        <span class="textopie">¡Y miles más!</span>
+    </div>
+
+    <span class="pide">Pide a como tu lo quieras.</span>
+    <form action="">
+        <div class="container">
+            <h1 class="elige">Tus compras</h1>
+            <span class="super">Elige tú Súper Mercado</span>
+            <div class="separador2"></div>
+            <div class="group1">
+                <input type="checkbox" id="aurerra" class="general">
+                <label for="aurerra" class="label">Aurrera</label>
+            </div>
+
+            <div class="group2">
+                <input type="checkbox" id="soriana" class="general">
+                <label for="soriana" class="label">Soriana</label>
+            </div>
+
+            <div class="group3">
+                <input type="checkbox" id="Súper Arlequín" class="general">
+                <label for="Súper Arlequín" class="label">Súper Arlequín</label>
+            </div>
+        </div>
+    </form>
+    <script>
+        window.onload = function() {
+            var contenedor = document.getElementById('contenedor_carga');
+            contenedor.style.visibility = 'hidden';
+            contenedor.style.opacity = '0';
+        }
+    </script>
+</body>
+
+</html>

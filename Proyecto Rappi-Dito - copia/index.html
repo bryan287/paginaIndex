@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rappi-dito</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="estilos.less">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="entregaicon.png" type="image/x-icon">
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script> -->
+
+</head>
+
+<body>
+    <style type="text/css" media="screen">
+        A:link {
+            text-decoration: none
+        }
+        /* A:hover {
+            color: #d6aa88;
+            font-family: arial;
+            text-decoration: none
+        } */
+        
+        A:visited {
+            color: #d6aa88;
+            font-family: arial;
+            text-decoration: none
+        }
+        
+        * {
+            outline: none !important;
+        }
+        
+        *:focus {
+            outline: none !important;
+        }
+        
+        textarea:focus,
+        input:focus {
+            outline: none !important;
+        }
+        
+        a {
+            text-decoration: none !important;
+            outline: none !important;
+        }
+    </style>
+
+    <h1 class='insetshadow'>¿Buscas magia?</h1>
+    <h1 class='elegantshadow'>
+        <div class="bitmojidiv">
+            <img src="VideoSnapchat.gif" width="80px" height="200px" class="bitmoji"> Rappi-dito
+        </div>
+    </h1>
+
+    <div class="separador"></div>
+
+    <!-- LOGO CARGA -->
+    <div id="contenedor_carga">
+        <div id="carga"></div>
+    </div>
+    <!-- TERMINA LOGO CARGA -->
+
+
+    <div class="margen">
+        <a href="#modal1" class="registro">
+            <button class="button">
+            ¡Ingresa!
+    <div class="button__horizontal"></div>
+    <div class="button__vertical"></div>
+    </button>
+        </a>
+    </div>
+
+    <aside id="modal1" class="modal1">
+        <div class="content-modal1">
+            <header>
+                <a href="#" class="close-modal1" style="color: black;">X</a>
+                <h2>Ingresa.</h2>
+            </header>
+            <article class="arti1">
+                <span class="titulo">Rappi-dito</span>
+                <div class="separador1"></div>
+                <input type="text" placeholder="Usuario" class="primerinput">
+                <input type="password" placeholder="Contraseña" class="segundoinput">
+                <div class="centrado">
+                    <input type="checkbox" class="tercerinput"><span class="tercer">Recordarme</span>
+                </div>
+
+                <button class="butonentrar"><span class="entrar">¡Rappi-dito!</span></button>
+                <span class="olvidaste"><a href="" style="color: black;">¿Olvidaste tu contraseña?</a></span>
+                <span class="registrarme"><a href="" style="color: black;"><u>Registrarme</u></a></span>
+            </article>
+        </div>
+        <a href="#" class="btn-close-modal1"></a>
+    </aside>
+    <!-- Revisar que todo compile correctamente -->
+
+    <section>
+        <div class="margen">
+            <a href="#modal" class="cta">
+                <button class="button1">
+            ¿Pedido especial?
+    <div class="button__horizontal1"></div>
+    <div class="button__vertical1"></div>
+    </button>
+            </a>
+        </div>
+
+    </section>
+
+    <aside id="modal" class="modal">
+        <div class="content-modal">
+            <header>
+                <a href="#" class="close-modal" style="color: black;">X</a>
+                <h2>Pedido especial.</h2>
+            </header>
+            <article class="arti">
+                <span class="titulo">Rappi-dito</span>
+                <div class="separador1"></div>
+                <span class="peticion">¿Qué te gustaría ordenar?</span>
+                <input type="text" placeholder="Ingrese su pedido" class="pedido">
+                <!-- <select name="direccion" id="" class="select">
+                    <option value="1">Tula de Allende</option>
+                    <option value="1">Tepeji del río</option>
+                    <option value="1">Pachuca de Soto</option>
+                    <option value="1">Progreso de Obregón</option>
+                    <option value="1">Tula de Allende</option>
+                </select> -->
+                <span class="ubicacion">Seleccione su municipio</span>
+                <div class="select-box">
+                    <div class="select-box__current" tabindex="1">
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked" />
+                            <p class="select-box__input-text">Tula de Allende</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="1" value="2" name="Ben" />
+                            <p class="select-box__input-text">Tepeji del río</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="2" value="3" name="Ben" />
+                            <p class="select-box__input-text">Progreso de Obregon</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="3" value="4" name="Ben" />
+                            <p class="select-box__input-text">Pachuca de Soto</p>
+                        </div>
+                        <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true" />
+                    </div>
+                    <ul class="select-box__list">
+                        <li>
+                            <label class="select-box__option" for="0" aria-hidden="aria-hidden">Tula de Allende</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="1" aria-hidden="aria-hidden">Tepeji del río</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="2" aria-hidden="aria-hidden">Progreso de Obregon</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="3" aria-hidden="aria-hidden">Pachuca de Soto</label>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+        </div>
+        <a href="#" class="btn-close-modal"></a>
+    </aside>
+
+    <!--  -->
+
+    <div class="restaurantes">
+        <a href="restaurantes.html">
+            <img src="restaurantes4.jpg" width="450" height="450" class="img1">
+            <div class="color1">
+                <p class="restaurante" style="color: white;">Restaurant's</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="supermercados">
+        <a href="supermercados.html">
+            <img src="supermercado2.jpg" width="450" height="450" class="img2">
+            <div class="color2">
+                <p class="supermercado" style="color:white;">SuperMercado</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="departamental">
+        <a href="departamental.html">
+            <img src="departamental1.jpg" width="450" height="450" class="img3">
+            <div class="color3">
+                <p class="departamental" style="color:white;">Departamentales</p>
+            </div>
+        </a>
+    </div>
+
+
+
+    <div class="separa"></div>
+    <p class="mejores">Nuestras mejores tiendas</p>
+
+
+
+
+
+    <!-- AQUI INICIA EL SLIDER NUMERO 1 -->
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="LogoStarbucks.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="LogoBurger.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="CocaLogo.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="OxxoLogo.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="NikeLogo.jpg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="AppleLogo.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="MicroLogo.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="AmazonLogo.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="DellLogo.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="IntelLogo.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="PizzaLogo.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="KfcLogo.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="NewLogo.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="RolexLogo.png" height="100" width="250" alt="" />
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- IMAGEN CENTRAL -->
+    <div class="imagencentro">
+        <img src="imagencentro.jpg" width="1300px" height="300px" class="imagencentral">
+        <p class="rappidito">Rappi-dito</p>
+        <p class="app">Prueba nuestra app</p>
+        <p class="descarga">¡Descárgala ya!</p>
+        <a href="#"><img src="playstore.png" width="120px" height="90" class="playstore"></a>
+        <a href="#"><img src="appstore.png" width="120px" height="90" class="appstore"></a>
+    </div>
+    <!-- AQUI INICIA NUEVA SECCIÓN -->
+
+
+
+    <!--  -->
+    <!-- NUEVO CARRUSEL AUTOMÁTICO -->
+
+    <div class="marco">
+
+        <div id="scene">
+            <div id="left-zone">
+                <ul class="list">
+                    <li class="item">
+                        <input type="radio" id="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)" name="basic_carousel" value="The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)"
+                            checked="checked" />
+                        <label class="label_strawberry" for="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)">Rappi-dito</label>
+                        <div class="content content_strawberry"><span class="picto"></span>
+                            <h1>Rappi-dito</h1>
+                            <p>¿Buscas magia? Con Rappi-dito tus productos están rápido en tu mesa.</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <input type="radio" id="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa." name="basic_carousel" value="A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."
+                        />
+                        <label class="label_banana" for="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa.">Quiénes somos</label>
+                        <div class="content content_banana"><span class="picto"></span>
+                            <h1>Quiénes somos</h1>
+                            <p>Rappi-dito es una empresa dedicada a la entrega de productos hasta la comodidas de su casa con el compromiso de que todos sus productos lleguen Rappidito</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <input type="radio" id="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."
+                            name="basic_carousel" value="The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."
+                        />
+                        <label class="label_apple" for="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus.">Contáctanos</label>
+                        <div class="content content_apple"><span class="picto"></span>
+                            <h1>Contáctanos</h1>
+                            <p>¿Tienes alguna duda sobre nuestro servicio? Contáctanos a tra ves del número 7731297711 para mayores informes.</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <input type="radio" id="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."
+                        />
+                        <label class="label_orange" for="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Quejas y sugerencias</label>
+                        <div class="content content_orange"><span class="picto"></span>
+                            <h1>Quéjas</h1>
+                            <p>Para quéjas y sugerencias favor de mandar mensaje a nuestras diferentes redes sociales.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="middle-border"></div>
+            <div id="right-zone"></div>
+        </div>
+    </div>
+    <div class="marcoultimo">
+        <div class="purosp">
+            <p class="acerca">Acerca de Rappi-dito</p>
+            <p class="politicas"><a href="">Políticas de privacidad</a></p>
+            <p class="titulo"><a href="">Lee nuestro blog</a></p>
+            <p class="descuento"><a href="">Descuentos</a></p>
+            <p class="restauranteinforme"><a href="">Agrega tu restaurante</a></p>
+        </div>
+        <div class="ayuda">
+            <p class="obten">Obtén Ayuda</p>
+            <p class="preguntas"><a href="">Preguntas frecuentes</a></p>
+            <p class="cercademi"><a href="">Restaurantes cerca de mi</a></p>
+            <p class="pedido"><a href="">Ahorra en tu primer pedido</a></p>
+            <p class="ciudades"><a href="">Conoce todas las ciudades</a></p>
+        </div>
+        <p style="color: aliceblue;" class="copy">Copyright &copy; Derechos de Autor 2019</p>
+    </div>
+
+
+    <!--  -->
+
+
+
+    <script src="jquery.min.js"></script>
+    <script src="annyang.ming.js"></script>
+    <script>
+        "use strict";
+
+        // first we make sure annyang started succesfully
+        if (annyang) {
+            var voices;
+
+            var utter = new SpeechSynthesisUtterance();
+            utter.rate = 1;
+            utter.pitch = 0.5;
+            utter.lang = 'es-MX';
+
+            //Cargamos las voces
+            window.speechSynthesis.onvoiceschanged = function() {
+                voices = window.speechSynthesis.getVoices();
+                console.log(voices);
+            };
+
+            var comandos = {
+                rapidito: function() {
+                    utter.text = "Que puedo hacer por ti";
+                    utter.voice = voices[0];
+                    window.speechSynthesis.speak(utter);
+                }
+            };
+
+            annyang.addCallback('result', function(phrases) {
+                console.log("I think the user said: ", phrases[0]);
+                console.log("But then again, it could be any of the following", phrases);
+            });
+
+            annyang.addCommands(comandos);
+
+            annyang.start({
+                autoRestart: false,
+                continuous: true
+            });
+            //     // define the functions our commands will run.
+            //     var hello = function() {
+            //         $("#hello").slideDown("slow");
+            //         scrollTo("#section_hello");
+            //     };
+
+            //     var showFlickr = function(tag) {
+            //         $('#flickrGallery').show();
+            //         $('#flickrLoader p').text('Searching for ' + tag).fadeIn('fast');
+            //         var url = '//api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a828a6571bb4f0ff8890f7a386d61975&sort=interestingness-desc&per_page=9&format=json&callback=jsonFlickrApi&tags=' + tag;
+            //         $.ajax({
+            //             type: 'GET',
+            //             url: url,
+            //             async: false,
+            //             jsonpCallback: 'jsonFlickrApi',
+            //             contentType: "application/json",
+            //             dataType: 'jsonp'
+            //         });
+            //         scrollTo("#section_image_search");
+            //     };
+
+            //     var jsonFlickrApi = function(results) {
+            //         $('#flickrLoader p').fadeOut('slow');
+            //         var photos = results.photos.photo;
+            //         $.each(photos, function(index, photo) {
+            //             $(document.createElement("img"))
+            //                 .attr({
+            //                     src: '//farm' + photo.farm + '.staticflickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret + '_s.jpg'
+            //                 })
+            //                 .addClass("flickrGallery")
+            //                 .appendTo(flickrGallery);
+            //         });
+            //     };
+
+            //     var showTPS = function(type) {
+            //         $('#tpsreport').show().animate({
+            //             bottom: '-100px'
+            //         }).delay('2000').animate({
+            //             bottom: '-500px'
+            //         });
+            //     };
+
+            //     var getStarted = function() {
+            //         window.location.href = 'https://github.com/TalAter/annyang';
+            //     }
+
+            //     // define our commands.
+            //     // * The key is the phrase you want your users to say.
+            //     // * The value is the action to do.
+            //     //   You can pass a function, a function name (as a string), or write your function as part of the commands object.
+            //     var commands = {
+            //         'hello (there)': hello,
+            //         'show me *search': showFlickr,
+            //         'show :type report': showTPS,
+            //         'let\'s get started': getStarted,
+            //     };
+
+            //     // OPTIONAL: activate debug mode for detailed logging in the console
+            //     annyang.debug();
+
+            //     // Add voice commands to respond to
+            //     annyang.addCommands(commands);
+
+            //     // OPTIONAL: Set a language for speech recognition (defaults to English)
+            //     // For a full list of language codes, see the documentation:
+            //     // https://github.com/TalAter/annyang/blob/master/docs/FAQ.md#what-languages-are-supported
+            //     annyang.setLanguage('en');
+
+            //     // Start listening. You can call this here, or attach this call to an event, button, etc.
+            //     annyang.start();
+            // } else {
+            //     $(document).ready(function() {
+            //         $('#unsupported').fadeIn('fast');
+            //     });
+            // }
+
+            // var scrollTo = function(identifier, speed) {
+            //     $('html, body').animate({
+            //         scrollTop: $(identifier).offset().top
+            //     }, speed || 1000);
+        }
+    </script>
+    <script>
+        window.onload = function() {
+            var contenedor = document.getElementById('contenedor_carga');
+            contenedor.style.visibility = 'hidden';
+            contenedor.style.opacity = '0';
+        }
+    </script>
+
+    <script>
+    </script>
+</body>
+
+</html>

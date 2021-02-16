@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viwerport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilossuper.css">
+
+    <title>CrearCuenta</title>
+</head>
+
+<body style="background-color:#ebd7d7;"></body>
+<div class="contBoton1">
+    <center><a href="./venta-Aurrera.html">INICIO</a></center>
+
+</div>
+<img src="./usuario.png" style="width: 160px; height: 200px; border-radius: 4px;
+         margin-left: 1090px; margin-top: 190px;">
+<div class="agrupar2">
+
+    <div class="cotainercont">
+        <form>
+            <center>
+                <font face="Comic Sans MS,arial,verdana">
+                    <font size="+2">
+                        <h3>Crear cuenta</h3>
+
+                    </font>
+                </font>
+            </center>
+
+            <br>
+
+            <div class="fila">
+                <div class="collabel1">
+                    <label>Nombre *</label>
+                </div>
+                <div class="colinput1">
+                    <input type="text" name="Nom" id="Nom" required minlength="3" maxlength="30" pattern="[A-Za-z]+" placeholder="Nombre">
+                </div>
+            </div>
+            <div class="fila">
+                <div class="collabel1">
+                    <label>Apellido Paterno *</label>
+                </div>
+                <div class="colinput1">
+                    <input type="text" name="Nom" id="Ape" required minlength="3" maxlength="30" pattern="[A-Za-z]+" placeholder="Apellido Paterno">
+                </div>
+            </div>
+            <div class="fila">
+                <div class="collabel1">
+                    <label>E-mail *</label>
+                </div>
+                <div class="colinput1">
+                    <input type="email" name="Email" id="Email" required placeholder="xxxxxx@gmail.com" pattern="[a-z0-9]+@[a-z.-]+\.[a-z]{2,}">
+                </div>
+                <div class="colParrafo">
+                    <p id="email"></p>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="collabel1">
+                    <label>Telefono *</label>
+                </div>
+                <div class="colinput1">
+                    <input type="tel" name="Tel" id="Tel" required pattern="\+[0-9]{0,4} [0-9]{0-1} [0-9]{4} [0-9]{4}" placeholder="+52 1 000 000 0000">
+                </div>
+                <div class="colParrafo">
+                    <p id="tel"></p>
+                </div>
+            </div>
+            <form>
+
+                <tr>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="politica de privacidad" required>
+                    <th> He leido y acepto la política de privacidad</th>
+                </tr>
+                <center>
+                    <div class="input">
+                        <input type="submit" value="Enviar">
+
+                    </div>
+                </center>
+            </form>
+        </form>
+    </div>
+</div>
+
+</html>

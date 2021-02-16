@@ -1,0 +1,87 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Formualrio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+</head>
+<body class="cont">
+    <div>
+    <br>
+    <h2>Bienvenido, registra los siguientes datos</h2>
+    </div>
+
+    <form class="agrupForm">
+        <div>
+            <label>Fecha</label>
+        </div>
+        <div>
+            <input type="date" name="fecha">
+        </div>
+
+        <div>
+            <label>Nombre</label>
+        </div>
+        <div>
+            <input type="text" name="nombre">
+        </div>
+        <br>
+        <br>
+        <br>
+        
+        <div>
+            <label>Plato</label>
+        </div>
+        <select class="input00">
+                <option>Seleccionar</option>
+                <option value="1">Sopa</option>
+                <option value="2">Enchiladas</option>
+                <option value="3">Ensalada</option>
+        </select>
+
+
+        <div>
+            <label>Bebida</label>
+        </div>
+        <select class="input00">
+                <option>Seleccionar</option>
+                <option value="1">Jugo</option>
+                <option value="2">Limonada</option>
+                <option value="3">Té helado</option>
+        </select>
+
+        <div>
+            <label>Postre</label>
+        </div>
+        <select  class="input00">
+                <option>Seleccionar</option>
+                <option value="1">Helado</option>
+                <option value="2">Crepas</option>
+        </select>
+
+        <div>
+            <label>Cantidad</label>
+        </div>
+        <div>
+            <input type="number" name="cantidad">
+        </div>
+
+        <div>
+            <label>Indicación especial:</label>
+        </div>
+        <div>
+            <textarea name="indcacion"></textarea>
+        </div>
+
+
+        <div class="boton0">
+        <input type="button" name="guardar" value="Enviar">
+        </div>
+
+        <div class="boton1">  
+        <input type="button" onclick="history.back()" name="Volver" value="Volver">
+        </div>
+
+    </form>
+</body>
+</html>

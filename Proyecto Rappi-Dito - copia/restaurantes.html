@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+    <title>Restaurantes</title>
+    <link rel="shortcut icon" href="entregaicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- INICIO ESTILOS etiqueta <a> -->
+    <style type="text/css" media="screen">
+        A:link {
+            text-decoration: none
+        }
+        /* A:hover {
+                color: #d6aa88;
+                font-family: arial;
+                text-decoration: none
+            } */
+        
+        A:visited {
+            color: #d6aa88;
+            font-family: arial;
+            text-decoration: none
+        }
+        
+        * {
+            outline: none !important;
+        }
+        
+        *:focus {
+            outline: none !important;
+        }
+        
+        textarea:focus,
+        input:focus {
+            outline: none !important;
+        }
+        
+        a {
+            text-decoration: none !important;
+            outline: none !important;
+        }
+    </style>
+    <!-- TERMINO ETIQUETA <a> -->
+    <!-- LOGO CARGA -->
+    <div id="contenedor_carga">
+        <div id="carga"></div>
+    </div>
+    <!-- TERMINA LOGO CARGA -->
+
+    <!-- INICIO TITULO -->
+    <h1 class='insetshadow'>¿Buscas magia?</h1>
+    <h1 class='elegantshadow'>
+        <div class="bitmojidiv">
+            <img src="VideoSnapchat.gif" width="80px" height="200px" class="bitmoji"><a href="index.html" style="color: black"> Rappi-dito</a>
+        </div>
+    </h1>
+
+    <div class="separador"></div>
+
+    <div class="margen1">
+        <a href="#modal1" class="registro">
+            <button class="button">
+                Ingresa
+    <div class="button__horizontal"></div>
+    <div class="button__vertical"></div>
+    </button>
+        </a>
+    </div>
+
+    <aside id="modal1" class="modal1">
+        <div class="content-modal1">
+            <header>
+                <a href="#" class="close-modal1" style="color: black;">X</a>
+                <h2>Ingresa.</h2>
+            </header>
+            <article class="arti1">
+                <span class="titulo">Rappi-dito</span>
+                <div class="separador1"></div>
+                <input type="text" placeholder="Usuario" class="primerinput">
+                <input type="password" placeholder="Contraseña" class="segundoinput">
+                <div class="centrado">
+                    <input type="checkbox" class="tercerinput"><span class="tercer">Recordarme</span>
+                </div>
+
+                <button class="butonentrar"><span class="entrar">¡Rappi-dito!</span></button>
+                <span class="olvidaste"><a href="" style="color: black;">¿Olvidaste tu contraseña?</a></span>
+                <span class="registrarme"><a href="" style="color: black;"><u>Registrarme</u></a></span>
+            </article>
+        </div>
+        <a href="#" class="btn-close-modal1"></a>
+    </aside>
+    <!-- Revisar que todo compile correctamente -->
+
+
+    <div class="margen">
+        <a href="#modal" class="cta">
+            <button class="button1">
+            ¿Pedido especial?
+    <div class="button__horizontal1"></div>
+    <div class="button__vertical1"></div>
+    </button>
+        </a>
+    </div>
+
+    <aside id="modal" class="modal">
+        <div class="content-modal">
+            <header>
+                <a href="#" class="close-modal" style="color: black;">X</a>
+                <h2>Pedido especial.</h2>
+            </header>
+            <article class="arti">
+                <span class="titulo">Rappi-dito</span>
+                <div class="separador1"></div>
+                <span class="peticion">¿Qué te gustaría ordenar?</span>
+                <input type="text" placeholder="Ingrese su pedido" class="pedido">
+                <!-- <select name="direccion" id="" class="select">
+                    <option value="1">Tula de Allende</option>
+                    <option value="1">Tepeji del río</option>
+                    <option value="1">Pachuca de Soto</option>
+                    <option value="1">Progreso de Obregón</option>
+                    <option value="1">Tula de Allende</option>
+                </select> -->
+                <span class="ubicacion">Seleccione su municipio</span>
+                <div class="select-box">
+                    <div class="select-box__current" tabindex="1">
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked" />
+                            <p class="select-box__input-text">Tula de Allende</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="1" value="2" name="Ben" />
+                            <p class="select-box__input-text">Tepeji del río</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="2" value="3" name="Ben" />
+                            <p class="select-box__input-text">Progreso de Obregon</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="3" value="4" name="Ben" />
+                            <p class="select-box__input-text">Pachuca de Soto</p>
+                        </div>
+                        <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true" />
+                    </div>
+                    <ul class="select-box__list">
+                        <li>
+                            <label class="select-box__option" for="0" aria-hidden="aria-hidden">Tula de Allende</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="1" aria-hidden="aria-hidden">Tepeji del río</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="2" aria-hidden="aria-hidden">Progreso de Obregon</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="3" aria-hidden="aria-hidden">Pachuca de Soto</label>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+        </div>
+        <a href="#" class="btn-close-modal"></a>
+    </aside>
+    <!-- FINAL TITULO -->
+
+
+
+
+    <p class="rappidito">Rappi-dito</p>
+    <p class="restaurante">Restaurant's</p>
+
+    <div class="restauraurantes">
+        <br><br>
+        <article class="img1">
+            <a href="" class="a1">
+                <img src="hambur.png" width="95px" height="115px" class="papas">
+                <div class="titulo1">
+                    <span class="datos1">Hambur Nachos</span>
+                    <br>
+                    <span class="titu1">Hamburguesas</span>
+                </div>
+            </a>
+        </article>
+
+        <article class="img2">
+            <a href="" class="a2">
+                <img src="combo.png" width="95px" height="115px" class="im2">
+                <div class="titulo2">
+                    <span class="datos2">Combos</span>
+                    <br>
+                    <span class="titu2">Hamburguesas</span>
+                </div>
+            </a>
+        </article>
+
+        <article class="img3">
+            <a href="" class="a3">
+                <img src="pizzagour.png" width="95px" height="115px" class="im3">
+                <div class="titulo3">
+                    <span class="datos3">Pizza gourmet</span>
+                    <br>
+                    <span class="titu3">Pizzas</span>
+                </div>
+            </a>
+        </article>
+        <div class="separa"></div>
+
+        <article class="img4">
+            <a href="" class="a4">
+                <img src="pizza1.png" width="95px" height="115px" class="im4">
+                <div class="titulo4">
+                    <span class="datos4">Pizzas Gorgeu's</span>
+                    <br>
+                    <span class="titu4">Pizzas</span>
+                </div>
+            </a>
+        </article>
+
+        <article class="img5">
+            <a href="" class="a5">
+                <img src="elegante.png" width="95px" height="115px" class="im5">
+                <div class="titulo5">
+                    <span class="datos5">T-bone</span>
+                    <br>
+                    <span class="titu5">Carnes</span>
+                </div>
+            </a>
+        </article>
+
+        <article class="img6">
+            <a href="" class="a6">
+                <img src="comida2.png" width="95px" height="115px" class="im6">
+                <div class="titulo6">
+                    <span class="datos6">Mariscos</span>
+                    <br>
+                    <span class="titu6">Mariscos</span>
+                </div>
+            </a>
+        </article>
+
+        <div class="separa1"></div>
+
+        <article class="img7">
+            <a href="" class="a7">
+                <img src="comida3.png" width="95px" height="115px" class="im7">
+                <div class="titulo7">
+                    <span class="datos7">Hambur Nachos</span>
+                    <br>
+                    <span class="titu7">Hamburguesas</span>
+                </div>
+            </a>
+        </article>
+
+        <article class="img8">
+            <a href="" class="a8">
+                <img src="comida4.png" width="95px" height="115px" class="im8">
+                <div class="titulo8">
+                    <span class="datos8">Hambur Nachos</span>
+                    <br>
+                    <span class="titu8">Hamburguesas</span>
+                </div>
+            </a>
+        </article>
+
+        <article class="img9">
+            <a href="" class="a9">
+                <img src="comida5.png" width="95px" height="115px" class="im9">
+                <div class="titulo9">
+                    <span class="datos9">Hambur Nachos</span>
+                    <br>
+                    <span class="titu9">Hamburguesas</span>
+                </div>
+            </a>
+        </article>
+
+        <div class="separa2"></div>
+
+        <article class="img10">
+            <a href="" class="a10">
+                <img src="comida6.png" width="95px" height="115px" class="im10">
+                <div class="titulo10">
+                    <span class="datos10">Hambur Nachos</span>
+                    <br>
+                    <span class="titu10">Hamburguesas</span>
+                </div>
+            </a>
+        </article>
+
+        <article class="img11">
+            <a href="" class="a11">
+                <img src="comida7.png" width="95px" height="115px" class="im11">
+                <div class="titulo11">
+                    <span class="datos11">Hambur Nachos</span>
+                    <br>
+                    <span class="titu11">Hamburguesas</span>
+                </div>
+            </a>
+        </article>
+
+        <article class="img12">
+            <a href="" class="a12">
+                <img src="comida8.png" width="95px" height="115px" class="im12">
+                <div class="titulo12">
+                    <span class="datos12">Hambur Nachos</span>
+                    <br>
+                    <span class="titu12">Hamburguesas</span>
+                </div>
+            </a>
+        </article>
+
+        <div class="separa2"></div>
+
+        <article class="img13">
+            <a href="" class="a13">
+                <img src="comida9.png" width="95px" height="115px" class="im13">
+                <div class="titulo13">
+                    <span class="datos13">Hambur Nachos</span>
+                    <br>
+                    <span class="titu13">Hamburguesas</span>
+                </div>
+            </a>
+        </article>
+
+        <article class="img14">
+            <a href="" class="a14">
+                <img src="comida10.png" width="95px" height="115px" class="im14">
+                <div class="titulo14">
+                    <span class="datos14">Hambur Nachos</span>
+                    <br>
+                    <span class="titu14">Hamburguesas</span>
+                </div>
+            </a>
+        </article>
+
+        <article class="img12">
+            <a href="" class="a12">
+                <img src="comida11.png" width="95px" height="115px" class="im12">
+                <div class="titulo12">
+                    <span class="datos12">Hambur Nachos</span>
+                    <br>
+                    <span class="titu12">Hamburguesas</span>
+                </div>
+            </a>
+        </article>
+
+        <div class="separa2"></div>
+
+        <article class="img13">
+            <a href="" class="a13">
+                <img src="comida12.png" width="95px" height="115px" class="im13">
+                <div class="titulo13">
+                    <span class="datos13">Hambur Nachos</span>
+                    <br>
+                    <span class="titu13">Hamburguesas</span>
+                </div>
+            </a>
+        </article>
+
+        <article class="img14">
+            <a href="" class="a14">
+                <img src="comida13.png" width="95px" height="115px" class="im14">
+                <div class="titulo14">
+                    <span class="datos14">Hambur Nachos</span>
+                    <br>
+                    <span class="titu14">Hamburguesas</span>
+                </div>
+            </a>
+        </article>
+
+        <article class="img12">
+            <a href="" class="a12">
+                <img src="comida14.png" width="95px" height="115px" class="im12">
+                <div class="titulo12">
+                    <span class="datos12">Hambur Nachos</span>
+                    <br>
+                    <span class="titu12">Hamburguesas</span>
+                </div>
+            </a>
+        </article>
+    </div>
+
+    <div class="categorias">
+        <div class="titulocatego">Categorías</div>
+        <a href="">
+            <div class="primercatego">
+                <p class="primer">Todos</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="segundacatego">
+                <p class="segunda">Hamburguesas</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="terceracatego">
+                <p class="tercera">Pizzas</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="terceracatego">
+                <p class="tercera">Hot Dogs</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="terceracatego">
+                <p class="tercera">Italiana</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="terceracatego">
+                <p class="tercera">Sushi</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="terceracatego">
+                <p class="tercera">Postres</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="terceracatego">
+                <p class="tercera">Café</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="terceracatego">
+                <p class="tercera">Tacos</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="terceracatego">
+                <p class="tercera">Mexicana</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="terceracatego">
+                <p class="tercera">Vegetariana</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="terceracatego">
+                <p class="tercera">Pescados y Mariscos</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="terceracatego">
+                <p class="tercera">Panadería</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="terceracatego">
+                <p class="tercera">Desayunos</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="terceracatego">
+                <p class="tercera">Wings</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="terceracatego">
+                <p class="tercera">China</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="terceracatego">
+                <p class="tercera">India</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="terceracatego">
+                <p class="tercera">Árabe</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="terceracatego">
+                <p class="tercera">Helados</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="terceracatego">
+                <p class="tercera">Internacional</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="informacion">
+        <article class="info1">
+            <a href="" class="info1">
+                <img src="relojpared.png">
+                <div class="info1">
+                    <span class="reloj">Nuestra prioridad eres tú</span>
+                    <br><br>
+                    <span class="reloj2">Recibe todos tus productos tan Rappi-dito</span>
+                </div>
+            </a>
+        </article>
+
+        <article class="info2">
+            <a href="" class="info2">
+                <img src="amor.png">
+                <div class="info1">
+                    <span class="reloj">En manos de expertos.</span>
+                    <br><br>
+                    <span class="reloj2">Elige tus productos con amor.</span>
+                </div>
+            </a>
+        </article>
+
+        <article class="info3">
+            <a href="" class="info3">
+                <img src="calidad.png">
+                <div class="info1">
+                    <span class="reloj">Con la mejor calidad.</span>
+                    <br><br>
+                    <span class="reloj2">Si no te gusta tu producto, no lo pagas.</span>
+                </div>
+            </a>
+        </article>
+    </div>
+
+    <div class="ultimainfo">
+        <div class="primersepara">
+            <span class="titulofinal">Categorías</span>
+            <a href="restaurantes.html">
+                <span class="primercategoria">
+                    Restaurantes
+                </span>
+            </a>
+
+            <a href="supermercados.html">
+                <span class="segundacategoria">
+                    Súper
+                </span>
+            </a>
+
+            <a href="">
+                <span class="terceracategoria">
+                    Departamentales
+                </span>
+            </a>
+        </div>
+        <div class="segundosepara">
+            <span class="infointeres">
+                Información de interés
+            </span>
+
+            <a href="">
+                <span class="primerinteres">
+                    Términos y Condiciones.
+                </span>
+            </a>
+
+            <a href="">
+                <span class="segundointeres">
+                    Trabaja con nosotros.
+                </span>
+            </a>
+
+            <a href="">
+                <span class="cuartointeres">
+                    Rappi-dito pay
+                </span>
+            </a>
+
+            <a href="">
+                <span class="quintointeres">
+                    Políticas de privacidad.
+                </span>
+            </a>
+
+            <a href="">
+                <span class="sextointeres">
+                    Quiero ser un Rappi-dito
+                </span>
+            </a>
+
+            <a href="">
+                <span class="septimointeres">
+                    Registra tu restaurante
+                </span>
+            </a>
+
+            <a href="">
+                <span class="octavointeres">
+                    Portal Partners Restaurantes
+                </span>
+            </a>
+
+            <span class="descarga">
+                Descarga la
+            </span>
+
+            <span class="app">
+                App
+            </span>
+
+            <a href="">
+                <img src="appstore.png" class="appstore">
+            </a>
+
+            <a href="">
+                <img src="playstore.png" class="playstore">
+            </a>
+            <span class="siguenos">
+                Síguenos
+            </span>
+
+            <a href="">
+                <img src="facebook.png" class="icon1">
+            </a>
+
+            <a href="">
+                <img src="instagram.png" class="icon2">
+                <span class="copyright">&copy; 2021 Rappi-dito</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            var contenedor = document.getElementById('contenedor_carga');
+            contenedor.style.visibility = 'hidden';
+            contenedor.style.opacity = '0';
+        }
+    </script>
+</body>
+
+</html>
